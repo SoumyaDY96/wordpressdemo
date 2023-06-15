@@ -46,7 +46,7 @@ echo -e "-----------------------------------------------------------------------
 echo -e "\033[1;31mCopy the dockerfile-compose into current wordpress folder\033[0m"
 cp ../docker-compose.yaml .
 
-docker compose up -d
+docker compose up -d --build
 
 echo -e "\033[1;34myou will be redirected to the website\033[0m"
 xdg-open http://localhost:80
