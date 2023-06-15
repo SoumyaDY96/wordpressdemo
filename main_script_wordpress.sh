@@ -73,3 +73,23 @@ done
 echo -e "\033[1;34mGive the necessary information and complete the installation process\033[0m"
 
 echo -e "\*\* IT WILL OPEN UP THE WORDPRESS WEBSITE \*\*"
+
+
+
+
+if [[ $1 == 'disable' ]];
+then
+  docker compose stop
+fi  
+
+if [[ $1 == 'enable' ]];
+then
+  docker compose start
+fi
+
+if [[ $1 == 'delete' ]];
+then
+  docker compose down
+fi
+
+
