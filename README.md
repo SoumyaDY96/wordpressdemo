@@ -13,8 +13,9 @@ plugins.
 
 "phpdockerfile" is used to install more extensions on the base image of php:7.4-fpm-alpine.
 
-"main_script_wordpress.sh" is the main script which should be run from the server. Nothing to do with the 
-rest of the files. 
+"main_script_wordpress.sh" is the main script which should be run from the server. 
+Download all the files to a specific folder and run this main script.
+
 The other files and necessary commands will run from within the main script.
 
 Make sure to change execute permission for "main_script_wordpress.sh" using:
